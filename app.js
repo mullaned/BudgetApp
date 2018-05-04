@@ -207,7 +207,7 @@ var UIController = (function() {
             // 3. Insert html into the DOM
             document.querySelector(element).insertAdjacentHTML('beforeend',newHtml);
         },
-        deleteLitsItem: function(selectorID){
+        deleteListItem: function(selectorID){
             var element;
             
             element = document.getElementById(selectorID);
@@ -380,7 +380,7 @@ var controller = (function(budgetCtrl, UICtrl){
         budgetCtrl.deleteItem(type,ID);
         
         // 2. Delete item from UI
-        UICtrl.deleteLitsItem(itemID);
+        UICtrl.deleteListItem(itemID);
         
         // 3. Update and show new budget
         updateBudget();
